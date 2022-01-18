@@ -43,7 +43,7 @@ jobs:
           # Repository name with owner. For example, actions/checkout
           repository: jovadker/jovadker.github.io
           # PAT token to be able to write the other repo
-          token: ${{ secret.PAT }}
+          token: ${{ secrets.PAT }}
           path: release
       - run: |
           cd release
