@@ -44,7 +44,8 @@ jobs:
         with:
           # Repository name with owner. For example, actions/checkout
           repository: jovadker/jovadker.github.io
-          #token: # optional, default is ${{ github.token }}
+          # PAT token to be able to write the other repo
+          token: ${{ secret.PAT }}
           path: release
       - run: |
           cd release
