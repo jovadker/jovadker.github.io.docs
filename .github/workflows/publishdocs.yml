@@ -38,4 +38,10 @@ jobs:
           name: generated site
           path: |
             _site
-            
+    
+      - name: Checkout
+        uses: actions/checkout@v2.4.0
+        with:
+          # Repository name with owner. For example, actions/checkout
+          repository: jovadker/jovadker.github.io
+          #token: # optional, default is ${{ github.token }}
