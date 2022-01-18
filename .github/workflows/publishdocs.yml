@@ -45,3 +45,14 @@ jobs:
           # Repository name with owner. For example, actions/checkout
           repository: jovadker/jovadker.github.io
           #token: # optional, default is ${{ github.token }}
+          path: release
+      - run: |
+          cd release
+          dir
+          date > generated.txt
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "generated"
+          git push
+        
