@@ -4,6 +4,12 @@
       "src": [
         {
           "files": [
+            "api/**.yml",
+            "api/index.md"
+          ]
+        },
+        {
+          "files": [
             "src/**.csproj"
           ]
         }
