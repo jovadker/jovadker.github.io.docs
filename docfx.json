@@ -4,12 +4,6 @@
       "src": [
         {
           "files": [
-            "api/**.yml",
-            "api/index.md"
-          ]
-        },
-        {
-          "files": [
             "src/**.csproj"
           ]
         }
@@ -21,6 +15,12 @@
   ],
   "build": {
     "content": [
+      {
+        "files": [
+          "api/**.yml",
+          "api/index.md"
+        ]
+      },
       {
         "files": [
           "articles/**.md",
