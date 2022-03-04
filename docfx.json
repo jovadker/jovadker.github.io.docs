@@ -17,12 +17,6 @@
     "content": [
       {
         "files": [
-          "api/**.yml",
-          "api/index.md"
-        ]
-      },
-      {
-        "files": [
           "articles/**.md",
           "articles/**/toc.yml",
           "toc.yml",
@@ -39,9 +33,6 @@
     ],
     "overwrite": [
       {
-        "files": [
-          "apidoc/**.md"
-        ],
         "exclude": [
           "obj/**",
           "_site/**"
