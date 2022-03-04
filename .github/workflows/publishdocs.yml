@@ -46,7 +46,7 @@ jobs:
           token: ${{ secrets.PAT }}
           path: release
       - run: |
-          cp -a ./_site/. ${{ env.GITHUB_WORKSPACE }}/release
+          cp -a ./_site/. $GITHUB_WORKSPACE/release
           cd release
           dir
           date > generated.txt
